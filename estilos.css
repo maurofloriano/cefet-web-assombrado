@@ -102,10 +102,19 @@ main {
   margin-left: 2.5%;
   margin-right: 2.5%;
   display: inline-block;
+  position: relative;
 }
 
 #posts-principais .post .titulo {
   text-shadow: 1px 1px black;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  position: absolute;
+  opacity: 0;
+}
+
+#posts-principais .post:hover .titulo {
+  opacity: 1;
 }
 
 #posts-principais .post img {
@@ -153,10 +162,12 @@ main {
 #tags {
   float: right;
   width: 300px;
+  top: 0px;
   background: black;
   padding: 1em;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: sticky;
 }
 
 #tags h1 {
@@ -279,4 +290,28 @@ footer .texto-rodape {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  float: right;
+  position:fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+span:active {
+  position: relative;
+  left: -2px;
+  top: -2px;
+  cursor: wait;
+}
+
+.phantom: {
+  position: absolute;
+}
+
+.phantom img {
+  width: 35px;
+  opacity: 0.1;
+}
+
+.phantom :hover {
+  opacity: 1;
 }
