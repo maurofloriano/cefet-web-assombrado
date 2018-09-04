@@ -303,8 +303,9 @@ span:active {
   cursor: wait;
 }
 
-.phantom: {
-  position: absolute;
+.phantom {
+  position: fixed;
+  bottom: 15px;
 }
 
 .phantom img {
